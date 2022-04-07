@@ -1,0 +1,31 @@
+.welcome-page {
+
+    background-size: cover;
+    padding: 12% 36%;
+    text-align: center;
+
+}
+
+.lead {
+    padding-left: 13%;
+    width: 90%;
+    font-size: 30px;
+}
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
+
+.str_to_morce_heading {
+    text-align: center;
+}
+
+.coll {
+    padding: 5% 20%;
+}
