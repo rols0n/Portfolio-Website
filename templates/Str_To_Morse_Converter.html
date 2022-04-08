@@ -1,13 +1,24 @@
 {% include "header.html" %}
-<body class="str_to_morce">
-    <h2 class="str_to_morce_heading"> String to Morce Code Converter</h2>
+<body style="background-image: url(static/img/morscecode-background.png);" class="str_to_morce">
+    <h2 class="str_to_morse_heading"> String to Morse Code Converter</h2>
     <div class="coll">
-        <form method="POST">
-            <input class="form-control form-control" name="entrys" type="text" placeholder="Write down, what u want to convert" aria-label=".form-control-lg">
-            <button type="button"  class="{{ CLASS }}">Convert</button>
+        <form id="morse-form" method="POST">
+            <input  class="form-control form-control" name="entrys" id='entry-morse' type="text" placeholder="Write down, what you want to convert" aria-label=".form-control-lg">
+            <br>
+            {% if CLASS == 'Converted' %}
+                <button  type="button"  class="btn btn-outline-success" >Converted</button>
+            {% else %}
+                <button  type="button"  class="btn btn-outline-danger" >Not-Converted-yet</button>
+            {% endif %}
         </form>
+            <br>
+        {% if CODER != '' %}
+            <div  class="alert alert-primary" role="alert">
 
-        <h4 class="str_to_morce_heading">{{ CODER }}</h4>
+               <h3 style="font-weight:300;">{{ CODER }}</h3>
+            </div>
+        {% endif %}
+
 
 
     </div>

@@ -1,15 +1,30 @@
 .welcome-page {
 
     background-size: cover;
-    padding: 12% 36%;
+    padding: 18%;
     text-align: center;
 
 }
 
 .lead {
-    padding-left: 13%;
+    text-align: center;
     width: 90%;
-    font-size: 30px;
+    padding-left: 8%;
+    font-size: 40px;
+    color: #423e3e;
+
+
+  }
+
+.cover-heading {
+    text-align: center;
+    width: auto;
+    margin: auto;
+    padding-bottom: 2%;
+    font-size: 120px;
+    color: #121212;
+    font-weight: 300;
+
 }
 $theme-colors: (
   "primary":    $primary,
@@ -22,10 +37,20 @@ $theme-colors: (
   "dark":       $dark
 );
 
-.str_to_morce_heading {
+
+.str_to_morce {
+
+}
+
+.str_to_morse_heading {
+    padding-top: 10%;
     text-align: center;
+    font-weight: 300;
+
 }
 
 .coll {
-    padding: 5% 20%;
+    padding: 3% 20%;
 }
+
+

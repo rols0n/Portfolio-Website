@@ -63,17 +63,18 @@ def home():
     return render_template('index.html')
 
 
-@app.route('/Str-To-Morce-Converter', methods=['GET', 'POST'])
+@app.route('/Str-To-Morse-Converter', methods=['GET', 'POST'])
 def Str_To_Morce_Converter():
     if request.method == 'POST':
         # request.form.get('entrys')
+        CODER = ''
         for entry in request.form.get('entrys'):
-            global CODER
+
             CODER += MORSE_CODE_ALPHABET[entry.upper()]
 
-        return render_template('Str_To_Morce_Converter.html', CODER=CODER, CLASS="btn btn-outline-success")
+        return render_template('Str_To_Morse_Converter.html', CODER=CODER, CLASS="Converted")
         #     return f'<h1>{CODER}</h1>'
-    return render_template('Str_To_Morce_Converter.html', entrys=None, CLASS="btn btn-outline-danger")
+    return render_template('Str_To_Morse_Converter.html', CODER='', entrys=None, CLASS="not-converted")
 
 
 if __name__ == "__main__":
