@@ -78,6 +78,6 @@ def Str_To_Morce_Converter():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
 
 
